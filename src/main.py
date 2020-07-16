@@ -30,5 +30,5 @@ class Main:
         print("classe exemplo, versao {}".format(versao))
 
 
-if __name__ == "__name__":
+if __name__ == "__main__":
     Main(1)
