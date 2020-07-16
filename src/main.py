@@ -3,21 +3,19 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 """ Tutorial Dois - Brincando de git.
 
-.. codeauthor:: Paulo Assumpção <paulo.assump@gmail.com>
+.. codeauthor:: Paulo Assumpcao <paulo.assump@gmail.com.br>
 
- - Como criar um repositório no github
- - Como clonar usando o comando git
- - Como comitar usando o comando git
+- Como criar um repositório no github
+- Como clonar usando o comando git
+- Como comitar usando o comando git
 
-- Classes nesse módulo:
-    :py:class:Main Exemplo de classe qualquer
-
-
+Classes neste modulo:
+    :py:class:`Main` Exemplo de classe qualquer.
 
 Changelog
 ---------
 .. versionadded::    20.07
-        Documentação do tutorial
+        Documentação do tutorial.
 
 """
 
