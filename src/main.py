@@ -26,9 +26,17 @@ class Main:
 
         :param versao: versão desse exemplo
     """
-    def __init__(self, versao):
-        print("classe exemplo, versao {}".format(versao))
+    def __init__(self, versao="20.07"):
+        self.versao = versao
+        #print("classe exemplo, versao {}".format(versao))
+
+    def get_versao(self):
+        """Retorna a versao do sistema
+
+            :return: A versao do sistema
+        """
+        return self.versao
 
 
 if __name__ == "__main__":
-    Main(1)
+    print(Main().get_versao())
