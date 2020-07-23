@@ -10,10 +10,38 @@ Welcome to Tutorial Dois's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+
+Modulo Vitollino
+----------------
+
+.. note::
+    Engenho de jogos do Superpython.
+
+.. automodule:: vitollino.main
+    :members:
+    :undoc-members:
+    :platform: Web
+    :synopsis: Engenho de Jogos.
+
+
+Modulo Golf
+-----------
+
+.. note::
+    Jogo da memoria trazido do python
+
+.. automodule:: golf
+    :members:
+    :undoc-members:
+    :platform: Web
+    :synopsis: Jogo da Memória.
+
+
+
 Modulo Main
 -----------
 
-..note::
+.. note::
     Só gera a versão.
 
 .. automodule:: main
