@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Delta.main.py
 # SPDX-License-Identifier: GPL-3.0-or-later
-""" Tutorial Dois - Brincando de git.
+""" Classe de exemplo baseado no Tutorial Dois do ProjOO - Brincando de git.
 
 .. codeauthor:: Paulo Assumpcao <paulo.assump@gmail.com.br>
 
@@ -20,13 +20,15 @@ Changelog
 """
 
 class Main:
-    """Classe exemplo
+    """
+        Classe principal do exemplo
 
         :param versao: versão desse exemplo
     """
     def __init__(self, versao="20.07"):
         self.versao = versao
         #print("classe exemplo, versao {}".format(versao))
+
 
     def get_versao(self):
         """Retorna a versao do sistema
