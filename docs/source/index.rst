@@ -11,7 +11,7 @@ Welcome to MEMORY GAME!
    :caption: Contents:
    
 
-Modulo Delta
+Modulo golf
 -----------
 
 .. note::
@@ -21,7 +21,7 @@ Modulo Delta
     :members:
     :undoc-members:
     :platform: Web
-    :synopsis: Jogo da Memória.
+    :synopsis: Jogo da Memória utilizando o vitollino.
     
     
 
@@ -50,6 +50,7 @@ Modulo Main
     :undoc-members:
     :platform: Web
     :synopsis: Gera versão.
+    
 
 Modulo Gerenciador Http
 -----------------------
