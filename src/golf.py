@@ -38,7 +38,7 @@ IMG_WIDTH = 150
 IMG_HEIGHT = 150
 
 
-class Card():
+class Card:
     """ Classe responsável pela renderização das faces das cartas
         
         :param name: nome da carta
@@ -75,7 +75,7 @@ class Card():
         self.card.elt.bind("click", self.turnUp)
 
         
-class Game2x5():
+class Game2x5:
     """ Classe principal do jogo da memória, responsável pelas regras do jogo e da jogabilidade
     """
     # referência para o Elemento
