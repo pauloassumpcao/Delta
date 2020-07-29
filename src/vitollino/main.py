@@ -1004,7 +1004,7 @@ class Cena:
 
     def _cria_divs(self, width):
         self.divesq = divesq = html.DIV(style=STYLE)
-        #divesq.style.opacity = 0
+        divesq.style.opacity = 0
         divesq.style.width = width // 3  # 100
         Droppable(divesq, cursor="not-allowed")
         divesq.onclick = self.vai_esquerda
