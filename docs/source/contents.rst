@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Tutorial Dois's documentation!
+Welcome to MeMORY GAME!
 =========================================
 
 .. toctree::
@@ -24,13 +24,13 @@ Modulo Vitollino
     :synopsis: Engenho de Jogos.
 
 
-Modulo Golf
+Modulo Delta
 -----------
 
 .. note::
     Jogo da memoria trazido do python
 
-.. automodule:: golf
+.. automodule:: delta
     :members:
     :undoc-members:
     :platform: Web
