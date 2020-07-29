@@ -50,6 +50,7 @@ class Card():
         :param rule: o método que contém as regras do jogo
         
     """      
+    
     def __init__(self, name, image, position, cena, rule):
         self.rule = rule
         self.name = name
@@ -67,6 +68,7 @@ class Card():
             Renderiza a carta com a face para cima e altera o comportamento do clique da carta
        
         """
+        
         self.card = Elemento(self.image, tit=self.name, x=self.pos_x, y=self.pos_y, width=IMG_WIDTH, height=IMG_HEIGHT, cena=self.cena)
         self.faceDown = False
         self.card.elt.bind("click", self.turnDown)
@@ -77,6 +79,7 @@ class Card():
             Renderiza a carta com a face para baixo e altera o comportamento do clique da carta
        
         """
+        
         self.card = Elemento(IMG_CARD_FACE_DOWN, tit=self.name, x=self.pos_x, y=self.pos_y, width=IMG_WIDTH, height=IMG_HEIGHT, cena=self.cena)
         self.faceDown = True
         self.card.elt.bind("click", self.turnUp)
@@ -87,6 +90,7 @@ class Game2x5:
         Classe principal do jogo da memória, responsável pelas regras do jogo e da jogabilidade
        
     """
+    
     # referência para o Elemento
     previous_selected_card = None
     list_objects = None
@@ -98,6 +102,7 @@ class Game2x5:
             Inicia o jogo.
             
         """
+        
         self.create_2x5_cards()
 
     def create_2x5_cards(self):
@@ -184,6 +189,7 @@ class Game2x5:
             Verifica se o jogo chegou ao fim
             
         """
+        
         # object é palavra reservada, use _object
         for _object in self.list_objects:
             if _object.faceDown == True:
@@ -202,6 +208,7 @@ class Game2x5:
             Embaralha as cartas
             
         """
+        
         list_cards =  [(0,0), (1,0), (2,0), (3,0), (4,0), (0,1), (1,1), (2,1), (3,1), (4,1)]
         random.shuffle(list_cards)
         return list_cards
