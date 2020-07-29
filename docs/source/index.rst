@@ -15,7 +15,7 @@ Modulo golf
 -----------
 
 .. note::
-    Jogo da memoria trazido do SyPyGirls
+    Jogo da memoria trazido do Superpython
 
 .. automodule:: golf
     :members:
