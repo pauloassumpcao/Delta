@@ -62,20 +62,20 @@ class Card():
         self.card.elt.bind("click", self.turnUp)
 
     def turnUp(self, env=None):
-    """
-        Renderiza a carta com a face para cima e altera o comportamento do clique da carta
+        """
+            Renderiza a carta com a face para cima e altera o comportamento do clique da carta
        
-    """
+        """
         self.card = Elemento(self.image, tit=self.name, x=self.pos_x, y=self.pos_y, width=IMG_WIDTH, height=IMG_HEIGHT, cena=self.cena)
         self.faceDown = False
         self.card.elt.bind("click", self.turnDown)
         self.rule(self)
 
     def turnDown(self, env=None):
-    """
-        Renderiza a carta com a face para baixo e altera o comportamento do clique da carta
+        """
+            Renderiza a carta com a face para baixo e altera o comportamento do clique da carta
        
-    """
+        """
         self.card = Elemento(IMG_CARD_FACE_DOWN, tit=self.name, x=self.pos_x, y=self.pos_y, width=IMG_WIDTH, height=IMG_HEIGHT, cena=self.cena)
         self.faceDown = True
         self.card.elt.bind("click", self.turnUp)
