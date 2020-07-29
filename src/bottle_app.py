@@ -4,9 +4,12 @@
 
 .. codeauthor:: Paulo Assumpcao <paulo.assump@gmail.com.br>
 
-- Como associar um evento a uma imagem
-- Como combinar cenas em salas diferentes
-- Como capturar o teclado
+- Rotas para o memorygame
+- Rota para Oi mundo
+- Rota para a versão do sistema
+- Rota para o PyMundo
+- Rota para o doc_mundo
+- Rota para o css_mundo
 
 Sem Classes neste modulo:
 
