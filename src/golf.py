@@ -1,4 +1,5 @@
-# patricia.delta.golf.py
+# -*- coding: utf-8 -*-
+# Delta.golf.py
 # SPDX-License-Identifier: GPL-3.0-or-later
 """ Jogo da Memória.
 
@@ -41,6 +42,7 @@ IMG_HEIGHT = 150
 class Card():
     """
         Classe responsável pela renderização das faces das cartas
+        
         :param name: nome da carta
         :param image: imagem da carta quando viarada para cima
         :param position: posição da carta na Cena
@@ -61,7 +63,7 @@ class Card():
 
     def turnUp(self, env=None):
     """
-        renderiza a carta com a face para cima e altera o comportamento do clique da carta
+        Renderiza a carta com a face para cima e altera o comportamento do clique da carta
        
     """
         self.card = Elemento(self.image, tit=self.name, x=self.pos_x, y=self.pos_y, width=IMG_WIDTH, height=IMG_HEIGHT, cena=self.cena)
@@ -71,7 +73,7 @@ class Card():
 
     def turnDown(self, env=None):
     """
-        renderiza a carta com a face para baixo e altera o comportamento do clique da carta
+        Renderiza a carta com a face para baixo e altera o comportamento do clique da carta
        
     """
         self.card = Elemento(IMG_CARD_FACE_DOWN, tit=self.name, x=self.pos_x, y=self.pos_y, width=IMG_WIDTH, height=IMG_HEIGHT, cena=self.cena)
