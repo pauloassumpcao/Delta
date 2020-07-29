@@ -48,6 +48,7 @@ class Card():
         :param position: posição da carta na Cena
         :param cena: a cena onde a carta será renderizada
         :param rule: o método que contém as regras do jogo
+        
     """      
     def __init__(self, name, image, position, cena, rule):
         self.rule = rule
