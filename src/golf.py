@@ -18,6 +18,7 @@ Changelog
         regra do jogo
 """
 from vitollino.main import Cena, Elemento, Texto, STYLE
+from browser.html import SPAN
 # em vez de sleep temos que usar o timer do navegador
 # https://www.brython.info/static_doc/en/timer.html
 from browser import timer
