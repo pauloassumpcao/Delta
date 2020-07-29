@@ -4,6 +4,10 @@
 
 .. codeauthor:: Paulo Assumpção <paulo.assump@gmail.com>
 
+Classes neste modulo:
+    :py:class:`Card` Classe responsável pelo comportamento e rederização das cartas.
+    :py:class:`Game2x5` Classe responsável pela jogabilidade.
+
 Changelog
 ---------
 .. versionadded::    20.07
@@ -35,6 +39,14 @@ IMG_WIDTH = 150
 IMG_HEIGHT = 150
 
 class Card():
+    """
+        Classe responsável pela renderização das faces das cartas
+        :param name: nome da carta
+        :param image: imagem da carta quando viarada para cima
+        :param position: posição da carta na Cena
+        :param cena: a cena onde a carta será renderizada
+        :param rule: o método que contém as regras do jogo
+    """      
     def __init__(self, name, image, position, cena, rule):
         self.rule = rule
         self.name = name
@@ -48,18 +60,30 @@ class Card():
         self.card.elt.bind("click", self.turnUp)
 
     def turnUp(self, env=None):
+    """
+        renderiza a carta com a face para cima e altera o comportamento do clique da carta
+       
+    """
         self.card = Elemento(self.image, tit=self.name, x=self.pos_x, y=self.pos_y, width=IMG_WIDTH, height=IMG_HEIGHT, cena=self.cena)
         self.faceDown = False
         self.card.elt.bind("click", self.turnDown)
         self.rule(self)
 
     def turnDown(self, env=None):
+    """
+        renderiza a carta com a face para baixo e altera o comportamento do clique da carta
+       
+    """
         self.card = Elemento(IMG_CARD_FACE_DOWN, tit=self.name, x=self.pos_x, y=self.pos_y, width=IMG_WIDTH, height=IMG_HEIGHT, cena=self.cena)
         self.faceDown = True
         self.card.elt.bind("click", self.turnUp)
 
 
 class Game2x5:
+    """
+        Classe principal do jogo da memória, responsável pelas regras do jogo e da jogabilidade
+       
+    """
     # referência para o Elemento
     previous_selected_card = None
     list_objects = None
@@ -67,14 +91,23 @@ class Game2x5:
     cena = Cena()
 
     def vai(self):
+        """
+            Inicia o jogo.
+            
+        """
         self.create_2x5_cards()
 
     def create_2x5_cards(self):
         """
-            matrix 2x5:
-            1A 1B 2A 2B 3A
-            3B 4A 4B 5A 5B
-        """
+            Cria uma matriz contendo 10 cartas distribuidas em 2 linhas e 5 colunas
+            
+        """       
+        
+        # Exemplo de matrix do jogo
+        #    matrix 2x5:
+        #    1A 1B 2A 2B 3A
+        #    3B 4A 4B 5A 5B
+        
         list_cards = self.shuffle_cards()
         # aqui, list_objects tem que ser atributo de instância da classe Game2x5
         # pois ele vai ser usado no método verifyingGameOver():
@@ -95,6 +128,13 @@ class Game2x5:
 
     # @staticmethod
     def rule(self, selected_card):
+        """
+            Regra do jogo da memória.
+            Verifica se as cartas são iguais, se sim mantem elas para cima,
+            caso contrário, virar para baixo
+            :param selected_card: a carta que foi selecionada
+            
+        """
 
         # abortar se o clique ocorrer sobre a mesma carta
         if Game2x5.previous_selected_card == selected_card:
@@ -137,6 +177,10 @@ class Game2x5:
 
     # @staticmethod
     def verifyingGameOver(self):
+        """
+            Verifica se o jogo chegou ao fim
+            
+        """
         # object é palavra reservada, use _object
         for _object in self.list_objects:
             if _object.faceDown == True:
@@ -151,6 +195,10 @@ class Game2x5:
 
 
     def shuffle_cards(self):
+        """
+            Embaralha as cartas
+            
+        """
         list_cards =  [(0,0), (1,0), (2,0), (3,0), (4,0), (0,1), (1,1), (2,1), (3,1), (4,1)]
         random.shuffle(list_cards)
         return list_cards
