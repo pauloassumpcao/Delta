@@ -37,6 +37,7 @@ IMG_CARD_5 = "http://activufrj.nce.ufrj.br/file/ProgOO/Card_Activ.png?disp=inlin
 IMG_WIDTH = 150
 IMG_HEIGHT = 150
 
+
 class Card():
     """ Classe responsável pela renderização das faces das cartas
         
@@ -73,7 +74,8 @@ class Card():
         self.faceDown = True
         self.card.elt.bind("click", self.turnUp)
 
-class Game2x5:
+        
+class Game2x5():
     """ Classe principal do jogo da memória, responsável pelas regras do jogo e da jogabilidade
     """
     # referência para o Elemento
