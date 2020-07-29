@@ -28,9 +28,9 @@ Modulo Delta
 -----------
 
 .. note::
-    Jogo da memoria trazido do python
+    Jogo da memoria trazido do SyPyGirls
 
-.. automodule:: delta
+.. automodule:: Delta
     :members:
     :undoc-members:
     :platform: Web
@@ -53,8 +53,11 @@ Modulo Main
 Modulo Gerenciador Http
 -----------------------
 
+:/: jogo da memória
 :/oi: diz oi
 :/doc: mostra a documentação
+:/vs: versão do sistema
+
 
 .. automodule:: bottle_app
     :members:
