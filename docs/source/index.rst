@@ -9,7 +9,21 @@ Welcome to MEMORY GAME!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
 
+Modulo Delta
+-----------
+
+.. note::
+    Jogo da memoria trazido do SyPyGirls
+
+.. automodule:: golf
+    :members:
+    :undoc-members:
+    :platform: Web
+    :synopsis: Jogo da Memória.
+    
+    
 
 Modulo Vitollino
 ----------------
@@ -22,19 +36,6 @@ Modulo Vitollino
     :undoc-members:
     :platform: Web
     :synopsis: Engenho de Jogos.
-
-
-Modulo Delta
------------
-
-.. note::
-    Jogo da memoria trazido do python
-
-.. automodule:: delta
-    :members:
-    :undoc-members:
-    :platform: Web
-    :synopsis: Jogo da Memória.
 
 
 
@@ -53,8 +54,11 @@ Modulo Main
 Modulo Gerenciador Http
 -----------------------
 
+:/: jogo da memória
 :/oi: diz oi
 :/doc: mostra a documentação
+:/vs: versão do sistema
+
 
 .. automodule:: bottle_app
     :members:
