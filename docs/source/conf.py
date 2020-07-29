@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath('../../src/mockbrython/'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Tutorial Dois'
+project = 'Jogo da Memória'
 copyright = '2020, Paulo Assumpcao'
 author = 'Paulo Assumpcao'
 
