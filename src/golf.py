@@ -73,7 +73,6 @@ class Card():
         self.faceDown = True
         self.card.elt.bind("click", self.turnUp)
 
-
 class Game2x5:
     """ Classe principal do jogo da memória, responsável pelas regras do jogo e da jogabilidade
     """
